@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * SUMOHeavy_FacebookTracking
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to support@sumoheavy.com so we can send you a copy immediately.
+ *
+ * @category   SUMOHeavy
+ * @package    SUMOHeavy_FacebookTracking
+ * @copyright  Copyright 2013 SUMO Heavy Industries, LLC
+ * @license    http://opensource.org/licenses/osl-3.0.php
+ * @author     Sean Kennedy <support@sumoheavy.com>
+ */
+-->
+<config>
+    <tabs>
+        <sumoheavy translate="label" module="sumoheavy_facebooktracking">
+            <label>SUMO Heavy</label>
+            <sort_order>999999999</sort_order>
+        </sumoheavy>
+    </tabs>
+    <sections>
+        <sumoheavy_facebooktracking translate="label" module="sumoheavy_facebooktracking">
+            <label>Facebook Tracking</label>
+            <tab>sumoheavy</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <cart translate="label">
+                    <label>Cart</label>
+                    <expanded>true</expanded>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Cart Tracking Enabled</label>
+                            <comment>Should facebook track cart views?</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <tracking_code translate="label">
+                            <label>Cart Tracking Code</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tracking_code>
+                    </fields>
+                </cart>
+                <category translate="label">
+                    <label>Category</label>
+                    <expanded>true</expanded>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Category Tracking Enabled</label>
+                            <comment>Should facebook track category views?</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <tracking_code translate="label">
+                            <label>Category Tracking Code</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tracking_code>
+                    </fields>
+                </category>
+                <checkout_success translate="label">
+                    <label>Checkout Success</label>
+                    <expanded>true</expanded>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Checkout Success Tracking Enabled</label>
+                            <comment>Should facebook track checkout success views?</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <tracking_code translate="label">
+                            <label>Checkout Tracking Code</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tracking_code>
+                    </fields>
+                </checkout_success>
+                <homepage translate="label">
+                    <label>Homepage</label>
+                    <expanded>true</expanded>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Homepage Tracking Enabled</label>
+                            <comment>Should facebook track homepage views?</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <tracking_code translate="label">
+                            <label>Homepage Tracking Code</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tracking_code>
+                    </fields>
+                </homepage>
+                <product translate="label">
+                    <label>Product</label>
+                    <expanded>true</expanded>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Product Tracking Enabled</label>
+                            <comment>Should facebook track product views?</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <tracking_code translate="label">
+                            <label>Product Tracking Code</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tracking_code>
+                    </fields>
+                </product>
+                <registration translate="label">
+                    <label>Registration</label>
+                    <expanded>true</expanded>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Registration Tracking Enabled</label>
+                            <comment>Should facebook track registration views?</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <tracking_code translate="label">
+                            <label>Registration Tracking Code</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </tracking_code>
+                    </fields>
+                </registration>
+            </groups>
+        </sumoheavy_facebooktracking>
+    </sections>
+</config>
